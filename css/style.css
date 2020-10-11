@@ -9,20 +9,59 @@
 }
 
 body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 4rem 100% 4rem;
+    grid-template-areas: "hd hd"
+        "side main"
+        "fo fo";
     background-color: #f1f3f4;
 }
 
+header {
+    background: #79bac1;
+    grid-area: hd;
+    margin-top: 0rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: dot;
+    font-size: 1rem;
+
+}
+
+/* Barra lateral*/
+aside {
+    background-color: #512b58;
+    opacity: 0.6;
+}
+
+/* Cuerpo de la web */
+main {
+    background: #f1f3f4;
+    grid-area: main;
+}
+
+/* Aquí el pié de página */
+footer {
+    background: #512b58;
+    grid-area: fo;
+}
+
+/* El título */
 .titulo {
     display: flex;
     justify-content: center;
-    font-family: dot;
-    font-size: 3rem;
-    color: #79bac1;
 }
 
+/* Los enlaces */
 .hrefs {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50%;
+    margin-left: 3rem;
     font-family: dot;
     font-size: 2rem;
     color: black;
@@ -34,6 +73,7 @@ body {
     font-family: juliette;
     font-size: 4rem;
     text-align: center;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 .tech {
@@ -42,6 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 4rem;
     font-family: dot;
     font-size: 3rem;
 }
@@ -53,8 +94,23 @@ body {
     width: 12rem;
     padding-top: 0.7em;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
-    border-radius: 30px 30px 30px 0%;
+    border-radius: 30px 30px 30px 0px;
+    position: relative;
+    justify-content: center;
+}
+
+.techSpec2 {
+    background-color: #512b58;
+    color: white;
+    height: 5rem;
+    width: 12rem;
+    padding-top: 0.7em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 30px 0px 30px 30px;
     position: relative;
     justify-content: center;
 }
@@ -70,4 +126,51 @@ body {
 .formula2 {
     font-family: dot;
     font-size: 1.5rem;
+    color: black;
+}
+
+button {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.data {
+    font-family: dot;
+    font-size: 1.5rem;
+    color: #79bac1;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 35%;
+    background-color: #79bac1;
+    height: 1px;
+}
+
+.profile {
+    display: grid;
+}
+
+.profileOne {
+    font-family: dot;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75%;
+    margin-right: 5%;
+    margin-top: 1rem;
+}
+
+img {
+    height: 30px;
 }
