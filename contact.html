@@ -11,32 +11,43 @@
 <body>
     <header>
         <h1 class="titulo">contactSpace</h1>
-        <div class="hrefs">
-            <a href="/home.html" style="color:#79bac1">Home</a> / <a href="/profile.html"
-                style="color:#79bac1">Profile</a> / <b>Contact</b>
-        </div>
     </header>
-
-    <div id="formulario">
-        <p class="parrafo">Aqui te dejo mi contacto para cualquier consulta,<br>
-            o si lo prefieres, enviame un mensaje desde el formulario</p>
-        <p class="formula2"><b>Tlf: </b>660-006-006</p>
-        <p class="formula2"><b>Email: </b>codingspace@gmilio.com</p>
-
-        <form class="formula2" method="POST" action="process.php">
-            Nombre: <input type="text" />
-            <p></p>
-            Email: <input type="text">
-            <p></p>
-            Mensaje:
-            <p></p>
-            <textarea cols="55" rows="15">Aquí..</textarea>
-        </form>
-    </div>
+    <aside>
+        <div class="hrefs">
+            <a href="/home.html" style="color:#79bac1">Home</a> <br> <a href="/profile.html"
+                style="color:#79bac1">Profile</a> <br> <b>Contact</b>
+        </div>
+    </aside>
+    <main>
+        <div id="formulario">
+            <p class="parrafo">Aqui dejo mi contacto para cualquier consulta,<br>
+                o si lo prefieres, enviame un mensaje desde el formulario. <br> Gracias!</p>
+            <p class="formula2"><b class="data">Tlf: </b>660-006-006</p>
+            <p class="formula2"><b class="data">Email: </b>codingspace@gmilio.com</p>
+            <hr>
+            <br>
+            <form class="formula2" method="POST" action="process.php">
+                Nombre <input type="text" />
+                <p></p>
+                Email <input type="text">
+                <p></p>
+                Mensaje:
+                <p></p>
+                <textarea cols="55" rows="15" placeholder="Escribe aquí tu mensaje.."></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
 
 
     <footer>
-
+        <div class="logos">
+            <img src="/logos/gh.png" alt="GitHub logo">
+            <img src="/logos/mit.png" alt="MIT License logo">
+            <img src="/logos/fb.png" alt="Facebook logo">
+            <img src="/logos/ig.png" alt="Instagram logo">
+            <img src="/logos/in.png" alt="LinkedIn logo">
+        </div>
     </footer>
 
     <script src="/js/app.js"></script>
