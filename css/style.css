@@ -1,0 +1,73 @@
+@font-face {
+    src: url(/fonts/Progbot-rg6O.ttf);
+    font-family: dot;
+}
+
+@font-face {
+    src: url(/fonts/JulietteGarden-owXD4.ttf);
+    font-family: juliette;
+}
+
+body {
+    background-color: #f1f3f4;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-family: dot;
+    font-size: 3rem;
+    color: #79bac1;
+}
+
+.hrefs {
+    display: flex;
+    justify-content: center;
+    font-family: dot;
+    font-size: 2rem;
+    color: black;
+}
+
+.parrafo {
+    display: flex;
+    justify-content: center;
+    font-family: juliette;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.tech {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: dot;
+    font-size: 3rem;
+}
+
+.techSpec {
+    background-color: #512b58;
+    color: white;
+    height: 5rem;
+    width: 12rem;
+    padding-top: 0.7em;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 30px 30px 30px 0%;
+    position: relative;
+    justify-content: center;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.formula2 {
+    font-family: dot;
+    font-size: 1.5rem;
+}
