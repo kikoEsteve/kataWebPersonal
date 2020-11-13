@@ -1,10 +1,10 @@
 @font-face {
-    src: url(/fonts/Progbot-rg6O.ttf);
+    src: url(./fonts/Progbot-rg6O.ttf);
     font-family: dot;
 }
 
 @font-face {
-    src: url(/fonts/JulietteGarden-owXD4.ttf);
+    src: url(./fonts/JulietteGarden-owXD4.ttf);
     font-family: juliette;
 }
 
